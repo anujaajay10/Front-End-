@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+      <div class="logo-section">
+        <img id="header-img" class="site-logo" src="https://etimg.etb2bimg.com/photo/80342670.cms" alt="company-logo">
+      </div>
+      <nav id="nav-bar" class="navigation-bar">
+        <ul style="list-style:none;" class="navigation">
+          <li><a class="nav-link" href="#norm">ABOUT US</a></li>
+          <li><a class="nav-link" href="#story">HOME</a></li>
+          <li><a class="nav-link" href="#designs">CONTACT</a></li>
+          <li><a class="nav-link" href="#contact">FORM</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container">
+        <section id="norm" class="cover-sect">
+          <div class="title-text">
+            <h1>UST</h1>
+            <p>~ TRANSFORMING LIVES ~</p>
+          </div>
+          <div class="box-feature">
+            <img src="http://blog.harmonyatwork.org/wp-content/uploads/2016/09/Web_Ust_ROY_6677_6.jpg" alt="Living room sample"/>
+          </div>
+        </section>
+        
+        <!--       ........ -->
+        <section id="story" class="story-sect">
+          <div class="section-text">
+            <h2><strong>UST FINANCE</strong></h2>
+            <P>UST is the leading American multinational financial services company headquartered in San Fransico and incorporated in Alisso vierjo.</p>
+            <p>UST Finance has digitally transformed more than 2000 clients over the course of 20 years. It is the largest bank in the United States and the world's largest bank by market capitalization.</p>
+
+        <br>  <p> For over 20 years, we've redefined craftsmanship and shared our expertise to help our clients succeed.</p></br>
+          </div>
+          <div class="box-feature">
+            <img src="https://wallpapercave.com/dwp1x/wp9223603.jpg" />
+          </div>
+        </section>
+        
+        <!--       ........ -->
+        <section id="designs" class="samples">
+          <div class="section-text">
+            <h2>SERVICES</h2>
+              <p style="text-align:center;">Services that make your financial journey easier.</p>
+          </div>
+          <div class="featured">
+            <div class="cont">
+              <figure>
+                <img src="https://cdnlearnblog.etmoney.com/wp-content/uploads/2023/01/Capital-Gains-Tax-Rules-for-Different-Investments-in-India.jpg" alt="modern style living room">
+                <figcaption>Tax benefits</figcaption>
+        
+                </figcaption>
+              </figure>
+            </div>
+            
+            <div class="cont">
+              <figure>
+                <img src="https://www.canarahsbclife.com/content/dam/choice/blog-inner/images/Why-do-you-need-savings-and-investment-plans.jpg">
+                <figcaption>Investment</figcaption>
+        
+                </figcaption>
+              </figure>
+            </div>
+            
+            <div class="cont">
+              <figure>
+                <img src="https://w10.naukri.com/mailers/2021/naukri-learning/oct/27oct-v3/Insurance.jpg">
+                <figcaption>Insurance</figcaption>
+                  
+  
+                </figcaption>
+              </figure>
+            </div>
+            
+          </div>
+          
+        
+        
+        <!--       ........ -->
+        <section id="contact" class="contact-section">
+          <div class="section-text">
+            <h2>Get in touch</h2>
+            <p>We would love to hear from you! <br><br>If you would like to receive our monthly catalogue subscribe by filling in the form with your name and email address</p>
+          </div>
+          <div class="contact-info">
+            <div class="form-box">
+              <form id="form" class="contact-form" action="https://www.freecodecamp.com/email-submit">
+                <label for="name" class="form-entry">Name <br>
+                  <input name="name" id="name" type="text" class="txt-box" placeholder="&nbsp&nbsp;Enter name" required><br>
+                </label>
+                <label for="email" class="form-entry">Email <br>
+                  <input name="email" id="email" type="email" class="txt-box" placeholder="&nbsp&nbsp;Enter email" required><br>
+                </label>
+                <label for="message" class="form-entry">Message<br>
+                  <textarea name="message" id="message" type="textarea" class="txt-box" placeholder="&nbsp;Optional"></textarea><br>
+                </label><br>
+                <input class="btn" id="submit" type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        
+        </section>
+      </div>
+    
+    </main>
+    <footer class="footer-section">
+      <div class="footer-info">
+        <ul style="list-style:none;">
+          <li><span>Privacy</span></li>
+          <li><span>Terms</span></li>
+          <li><span>Contact</span></li>
+        </ul>
+      </div>
+      <span class="personal-info">Created by MJ</span>
+      <span>Copyright 2021</span>
+    </footer>
+    
+  </body>
