@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Data Validation</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Data Validation</h1>
+    <form id="user-form">
+      <div>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+        <span id="full-name-error" class="error"></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="email-error" class="error"></span>
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <span id="age-error" class="error"></span>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="password-error" class="error"></span>
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span id="confirm-password-error" class="error"></span>
+      </div>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <script>
+      const form = document.getElementById('user-form');
+      const fullNameInput = document.getElementById('full-name');
+      const emailInput = document.getElementById('email');
+      const ageInput = document.getElementById('age');
+      const passwordInput = document.getElementById('password');
+      const confirmPasswordInput = document.getElementById('confirm-password');
+
+      function validateFullName() {
+        const fullName = fullNameInput.value.trim();
+        const fullNameError = document.getElementById('full-name-error');
+        if (fullName === '') {
+          fullNameError.textContent = 'Full name is required';
+          return false;
+        } else if (!/^[A-Za-z ]+$/.test(fullName)) {
+          fullNameError.textContent = 'Full name must only contain letters and spaces';
+          return false;
+        }
+        fullNameError.textContent = '';
+        return true;
+      }
+
+      function validateEmail() {
+        const email = emailInput.value.trim();
+        const emailError = document.getElementById('email-error');
+        if (email === '') {
+          emailError.textContent = 'Email is required';
+          return false;
+        } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+          emailError.textContent = 'Invalid email format';
+          return false;
+        }
+        emailError.textContent = '';
+        return true;
+      }
+
+      function validateAge() {
+        const age = ageInput.value.trim();
+        const ageError = document.getElementById('age-error');
+        if (age === '') {
+          ageError.textContent = 'Age is required';
+          return false;
+        } else if (isNaN(age)) {
+          ageError.textContent = 'Age must be a number';
+          return false;
+        } else if (age < 18) {
+          ageError.textContent = 'Age must be at least 18';
+          return false;
+        }
+        ageError.textContent = '';
+        return true;
+      }
+
+      function validatePassword() {
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+        const passwordError = document
+        }
